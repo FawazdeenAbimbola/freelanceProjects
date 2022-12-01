@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/categories.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylehsheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="images/logo.png" width='100px' height='70px' class='logo'/>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="contribute.html">Contribute</a></li>
+                </ul>
+            </div>
+            <div class="btn-links">
+                <a href="">Get started</a>
+                <a href="contact.html" id="contact">Contact us</a>
+              
+            </div>
+            <img src="images/menu.png" onclick="openNav()" alt=""  id="menu"> 
+        </nav>
+        <div class="text">
+            <div class="about-text">
+                <h1>Categories &mdash;</h1>
+                <h1>Xypo</h1>
+                <p>Below is a list of areas we provide solutions for within your deadline. </p>
+                
+                <div>
+                 <a href="#area"><img src="/images/arrow-circle-down.svg" width="50px"></a> 
+                </div>    
+            </div>
+            <div class="about-img">
+             <img src="/images/offer.png" alt="" srcset="">
+            </div>
+
+           
+        </div>
+        <div class="responsive-navbar" id="responsive">
+            <button class="close-btn" onclick="closeNav()">X</button>
+            <div class="responsive-navbar-link">
+            <a href="index.html">Home</a>
+            <a href="about.html">About us</a>
+            <a href="categories.html">Categories</a>
+            <a href="contribute.html">Contribute</a>
+            <a href="getstarted.html">Get started</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </div>
+    </header>
+    
+    <section class="areas" id="area">
+        <h2>Areas we can provide simplified and verified solutions easily for you.</h1>
+            <p>You bring the problems, we craft out solutions for your assignments or tasks.</p>
+        <div class="category">
+          
+                <div class="row one">
+                <img src="/images/maths.jpg" width="200px" alt="">
+                <h4>Mathematics</h4>
+                <p>Algebra, Equations, Fractions, Gradients, Sequence and Series and so on </p>
+            </div>
+            <div class="row two">
+                <img src="/images/31_Chemistry.jpg" width="200px" alt="">
+                <h4>Chemistry</h4>
+                <p>Atoms, Electrolysis, Gas laws, Mass/Volume, Oxidation, Stochiometry </p>
+            </div>
+            <div class="row three">
+                <img src="/images/physics.jpg" width="200px" alt="">
+                <h4>Physics</h4>
+                <p>Electromagnetic waves, Projectiles, Temperatures, Linear Expansivity and so on</p>
+            </div>
+            <div class="row four">
+                <img src="/images/biology.jpg" width="200px" alt="">
+                <h4>Biology</h4>
+                <p>Concept of living, Circulation, Nutrition,  Ecology, Heredity, Evolution and so on..</p>
+            </div>
+            <div class="row five">
+                <img src="/images/webdev.jpg" width="200px" alt="">
+                <h4>Web Development</h4>
+                <p>HTML & CSS bug fixing, Website testing, building small solutions for your project. </p>
+            </div>
+            <div class="row six">
+                <img src="/images/vecteezy_working-process-new-email-message-mail-notification_13269078.jpg" width="200px" alt="">
+                <h4>Letter Writing</h4>
+                <p>Informal, Semi-formal, and Formal letter, Descriptive and Narrative essay</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+</body>
+<script src="js/responsive.js"></script>
+</html>

@@ -1,0 +1,55 @@
+*{margin:0; padding:0; font-family: poppins; }
+
+header{min-height: 100vh; width: 100%; background-position: center; background-size: cover;}
+nav{display: flex; justify-content: space-between; align-items: center; padding:1% 5%}
+.nav-links{flex: 1; text-align: center;}
+.nav-links ul li{list-style-type: none; display: inline-block; margin: 8px 30px;}
+.nav-links ul li a{ color: black; font-size: 15px; padding:5px; text-decoration: none;}
+.nav-links ul li a:hover { border-bottom: 2px solid palevioletred; }
+.btn-links a{color: black; padding:5px; font-size:15px; text-decoration: none; margin: 8px 16px;}
+#contact{background-color: palevioletred; color: white; padding: 14px 16px;}
+#menu{display: none; width: 40px;}
+.close-btn {width:0%}
+.responsive-navbar{display: none;}
+#dash{font-size: 45px;}
+
+.text{display: flex; width:100%; height: 40%;}
+.about-text, .about-img{width: 50%; display: inline-block; margin-left:5% ;}
+.about-text{margin-top: 5%;}
+.about-img img{width: 90%;}
+.about-text p{margin:1.0em 0 1.5em ;}
+#contribute, #started{margin-top: 2.0em; margin-right: 0.5em; background-color: palevioletred; color: white; padding: 14px 16px; text-decoration: none;}
+
+@media(max-width:1100px) {
+    header{}
+    .nav-links, .btn-links{display: none}
+    /* .text{ display: none;} */
+    #menu{display: block; cursor: pointer;}
+    .logo{width:100px; height: 70px;}
+    .text{display:block; width: 90%; height: 70%;}
+    .about-text{width: 100%;}
+    .about-img{margin-top:1em ; width: 100%;}
+    #mobile-res{display: none;}
+    #contribute{display: none;}
+     #started{display:block; width:30%; margin: 12px auto; text-align: center;}
+    /* .text{width: 100%; height: 80%; margin-top: 8%;}
+    .about-text{ width: 95%; margin-left: 3%;}
+    .about-img{width: 100%;}
+    .about-img img{width: 100%; height: 0%; margin: 0px auto;} */
+    .responsive-navbar{ height:100%; width:0%; position:fixed; top:0%; right:0%; display: block; transition: 0.5s; background-color: whitesmoke;}
+    .responsive-navbar-link{position: relative; top: 5%; left: 5%; width: 60%;}
+    .responsive-navbar a{ color: grey; display: block; font-size: 16px; margin: 3rem 0rem; text-decoration: none; margin-left: 15px;}
+    .responsive-navbar a:hover{color: black;}
+    .close-btn{ cursor:pointer; position:absolute; top:2%; right: 10%; font-size: 27px; font-weight:bolder; color:   #333; outline: none; background: transparent; border: none;}
+    .close-btn:hover{color: palevioletred;}
+   
+}
+@media(max-width:800px){
+    .about-img img{width: 50%; display: block; margin: 0 auto;}
+}
+@media(max-width:600px) {
+    
+}
+@media(max-width:300px) {
+    #started{display:block; width:50%;} 
+}

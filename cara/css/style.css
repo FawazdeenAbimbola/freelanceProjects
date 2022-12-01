@@ -1,0 +1,56 @@
+*{margin:0; padding:0; font-family: poppins;}
+
+header{min-height: 100vh; width: 100%; background-image: url('/images/background.png'); background-position: center; background-size: cover;}
+nav{display: flex; justify-content: space-between; align-items: center; padding:1% 5%}
+.nav-links{flex: 1; text-align: center;}
+.nav-links ul li{list-style-type: none; display: inline-block; margin: 8px 30px;}
+.nav-links ul li a{ color: black; font-size: 15px; padding:5px; text-decoration: none;}
+.nav-links ul li a:hover { border-bottom: 2px solid palevioletred; }
+.btn-links a{color: black; padding:5px; font-size:15px; text-decoration: none; margin: 8px 16px;}
+#contact{background-color: palevioletred; color: white; padding: 14px 16px;}
+.text{ width: 40%;position: absolute; top:45%; left:27%; transform: translate(-50%, -50%);}
+
+.text h1{ font-size: 40px; font-family: poppins; margin: 1rem 0;}
+.text h2{font-size: 30px; margin: 1rem 0;}
+.text a{ padding: 14px 37px; background-color: palevioletred;  color: white; text-decoration: none; ;}
+#menu{display: none; width: 40px;}
+.close-btn {width:0%}
+.responsive-navbar{display: none;}
+
+@media(max-width:1100px) {
+    header{background-image: linear-gradient(rgba(4,9,30,0.2), rgba(4,9,30,0.2)), url('/images/background.png');}
+    .nav-links, .btn-links{display: none}
+    /* .text{ display: none;} */
+    .text{ width: 90%;position: absolute; top:45%; left:50%; color:white;transform: translate(-50%, -50%); text-align: center;}
+    .text h1{ font-size: 45px; margin: 1rem 0;}
+    .text h2{font-size: 28px; margin: 1rem 0;}
+    .text a{ padding: 14px 37px; background-color: palevioletred;  color: white; text-decoration: none; ;}
+    #menu{display: block; cursor: pointer;}
+    .logo{width:100px; height: 70px;}
+    .responsive-navbar{ height:100%; width:0%; position:fixed; top:0%; right:0%; display: block; transition: 0.5s; background-color: whitesmoke;}
+    .responsive-navbar-link{position: relative; top: 5%; left: 5%; width: 60%;}
+    .responsive-navbar a{ color: grey; display: block; font-size: 16px; margin: 3rem 0rem; text-decoration: none; margin-left: 15px;}
+    .responsive-navbar a:hover{color: black;}
+    .close-btn{   cursor:pointer; position:absolute; top:2%; right: 10%; font-size: 30px; font-weight:bolder; color:   #333; outline: none; background: transparent; border: none;}
+    .close-btn:hover{color: palevioletred;}
+}
+@media(max-width:800px){
+    .text{ width: 90%;position: absolute; top:50%; left:50%; color:white;transform: translate(-50%, -50%); text-align: center;}
+    .text h1{font-size: 45px;}
+    .text h2{font-size: 20px;}
+    .text a{padding:15px;}
+}
+@media(max-width:600px) {
+    .text{ width: 90%;position: absolute; top:50%; left:50%; color:white;transform: translate(-50%, -50%); text-align: center;}
+    .text h1{font-size: 40px;}
+    .text h2{font-size: 24px;}
+    .text a{padding:15px;}
+    
+}
+@media(max-width:300px) {
+    .logo{width:50px; height: 35px;}
+    .text{ width: 90%;position: absolute; top:40%; left:50%; color:white;transform: translate(-50%, -50%); text-align: center;}
+    .text h1{font-size: 20px;}
+    .text h2{font-size: 14px;}
+    .text a{padding:10px;}
+}
